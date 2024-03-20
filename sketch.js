@@ -27,7 +27,7 @@ function draw() {
   let ca = cos(angle * 3.213); 
   let cb = sin(angle); 
 
-  angle += 0.03; 
+  angle += 0.036; 
   for (let x = 0; x < width; x++) {
     for (let y = 0; y < height; y++) {
       let a = map(x, 0, width, mnVal, maxVal);
