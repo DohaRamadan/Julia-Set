@@ -24,8 +24,11 @@ function draw() {
   background(255);
 
   loadPixels();
-  let ca = cos(angle * 3.213); 
-  let cb = sin(angle); 
+  // let ca = cos(angle * 3.213); 
+  // let cb = sin(angle); 
+
+  let ca = map(mouseX, 0, width, -1, 1); 
+  let cb = map(mouseY, 0, height, -1, 1); 
 
   angle += 0.04; 
   for (let x = 0; x < width; x++) {
